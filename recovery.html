@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recovery Plan — RecoverEase</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar scrolled" id="navbar">
+    <div class="container">
+      <a href="index.html" class="nav-logo">
+        <div class="logo-icon"><i class="fa-solid fa-heart-pulse"></i></div>
+        RecoverEase
+      </a>
+      <div class="nav-links" id="navLinks">
+        <a href="index.html">Home</a>
+        <a href="recovery.html" class="active">Recovery</a>
+        <a href="medicine.html">Medicine</a>
+        <a href="exercise.html">Exercise</a>
+        <a href="dashboard.html">Dashboard</a>
+      </div>
+      <div class="nav-actions" id="navActions"></div>
+      <button class="nav-toggle" id="navToggle"><i class="fa-solid fa-bars"></i></button>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <div class="page-header">
+    <div class="container">
+      <span class="section-label"><i class="fa-solid fa-clipboard-list"></i> Recovery Planner</span>
+      <h1>Your Daily Recovery Plan</h1>
+      <p>Follow your personalized day-by-day recovery guide based on your condition</p>
+    </div>
+  </div>
+
+  <!-- Page Content -->
+  <div class="page-content">
+    <div class="container">
+
+      <!-- Condition Selector -->
+      <div class="condition-selector animate-in">
+        <button class="condition-btn active" data-condition="surgery">
+          <i class="fa-solid fa-scissors"></i> Surgery
+        </button>
+        <button class="condition-btn" data-condition="fever">
+          <i class="fa-solid fa-temperature-high"></i> Fever
+        </button>
+        <button class="condition-btn" data-condition="fracture">
+          <i class="fa-solid fa-bone"></i> Fracture
+        </button>
+      </div>
+
+      <!-- Day Selector -->
+      <div class="day-selector animate-in delay-1">
+        <script>
+          document.currentScript.insertAdjacentHTML('beforebegin',
+            Array.from({length: 30}, (_, i) =>
+              `<button class="day-btn ${i === 0 ? 'active' : ''}" data-day="${i + 1}">${i + 1}</button>`
+            ).join('')
+          );
+        </script>
+      </div>
+
+      <!-- Day Info -->
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:24px" class="animate-in delay-2">
+        <div>
+          <h2 style="font-size:22px" id="dayLabel">Day 1</h2>
+          <p style="font-size:14px;color:var(--text-light)">Complete all tasks for best recovery results</p>
+        </div>
+        <div style="display:flex;gap:8px">
+          <button class="btn btn-sm btn-ghost"><i class="fa-solid fa-print"></i> Print</button>
+          <button class="btn btn-sm btn-ghost"><i class="fa-solid fa-share-nodes"></i> Share</button>
+        </div>
+      </div>
+
+      <!-- Task Container -->
+      <div id="taskContainer" class="animate-in delay-3">
+        <!-- Tasks rendered by JS -->
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="nav-logo">
+            <div class="logo-icon"><i class="fa-solid fa-heart-pulse"></i></div>
+            RecoverEase
+          </a>
+          <p>Your trusted companion for post-hospital recovery. Guiding you back to health, one day at a time.</p>
+          <div class="footer-social">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+          </div>
+        </div>
+        <div>
+          <h4>Platform</h4>
+          <ul>
+            <li><a href="recovery.html">Recovery Plans</a></li>
+            <li><a href="medicine.html">Medicine Tracker</a></li>
+            <li><a href="exercise.html">Exercises</a></li>
+            <li><a href="dashboard.html">Dashboard</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Support</h4>
+          <ul>
+            <li><a href="#">Help Center</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Caregiver Guide</a></li>
+            <li><a href="#">FAQs</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Emergency</h4>
+          <ul>
+            <li><a href="#" style="color:#EF4444;font-weight:600"><i class="fa-solid fa-phone"></i> Call 911</a></li>
+            <li><a href="#">Poison Control</a></li>
+            <li><a href="#">Find Hospital</a></li>
+            <li><a href="#">Emergency Tips</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>2024 RecoverEase. All rights reserved.</span>
+        <span>Made with <i class="fa-solid fa-heart" style="color:#EF4444"></i> for patients</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

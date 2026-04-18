@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login — RecoverEase</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="auth-wrapper">
+    <div class="auth-card animate-in">
+      <div class="auth-logo">
+        <a href="index.html" class="nav-logo">
+          <div class="logo-icon"><i class="fa-solid fa-heart-pulse"></i></div>
+          RecoverEase
+        </a>
+      </div>
+
+      <h2>Welcome Back</h2>
+      <p class="auth-subtitle">Sign in to continue your recovery journey</p>
+
+      <form id="loginForm">
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" class="form-control" placeholder="Enter your email" required>
+        </div>
+
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" class="form-control" placeholder="Enter your password" required>
+        </div>
+
+        <button type="submit" class="btn btn-primary btn-lg" style="width:100%;margin-top:8px">
+          <i class="fa-solid fa-right-to-bracket"></i> Login
+        </button>
+      </form>
+
+      <div class="auth-divider">or continue with</div>
+
+      <button class="btn btn-secondary" style="width:100%" onclick="demoLogin()">
+        <i class="fa-solid fa-flask"></i> Try Demo Account
+      </button>
+
+      <div class="auth-footer">
+        Don't have an account? <a href="register.html">Sign Up</a>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+  <script>
+    function demoLogin() {
+      localStorage.setItem('token', 'demo_token_' + Date.now());
+      localStorage.setItem('user', JSON.stringify({
+        id: 'demo_1', name: 'Demo User', email: 'demo@recoverease.com', condition: 'surgery'
+      }));
+      showToast('Welcome to the demo!', 'success');
+      setTimeout(() => window.location.href = 'dashboard.html', 800);
+    }
+  </script>
+</body>
+</html>

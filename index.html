@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RecoverEase — Post-Hospital Recovery Guide</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <a href="index.html" class="nav-logo">
+        <div class="logo-icon"><i class="fa-solid fa-heart-pulse"></i></div>
+        RecoverEase
+      </a>
+      <div class="nav-links" id="navLinks">
+        <a href="index.html" class="active">Home</a>
+        <a href="recovery.html">Recovery</a>
+        <a href="medicine.html">Medicine</a>
+        <a href="exercise.html">Exercise</a>
+        <a href="dashboard.html">Dashboard</a>
+      </div>
+      <div class="nav-actions" id="navActions"></div>
+      <button class="nav-toggle" id="navToggle"><i class="fa-solid fa-bars"></i></button>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-badge animate-in">
+          <i class="fa-solid fa-shield-heart"></i>
+          Trusted by 10,000+ patients
+        </div>
+        <h1 class="hero-title animate-in delay-1">
+          Recover Better<br>
+          <span class="text-gradient">At Home</span>
+        </h1>
+        <p class="hero-description animate-in delay-2">
+          Your complete post-hospital recovery companion. Personalized plans, medicine reminders, and guided exercises — all in one place.
+        </p>
+        <div class="hero-buttons animate-in delay-3">
+          <a href="register.html" class="btn btn-primary btn-lg">
+            <i class="fa-solid fa-play"></i> Start Recovery
+          </a>
+          <a href="login.html" class="btn btn-secondary btn-lg">
+            <i class="fa-solid fa-right-to-bracket"></i> Login
+          </a>
+        </div>
+        <div class="hero-stats animate-in delay-4">
+          <div class="hero-stat">
+            <h3>10K+</h3>
+            <p>Patients Helped</p>
+          </div>
+          <div class="hero-stat">
+            <h3>95%</h3>
+            <p>Recovery Rate</p>
+          </div>
+          <div class="hero-stat">
+            <h3>4.9</h3>
+            <p>User Rating</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 3D Slider -->
+      <div class="slider-wrapper">
+        <div class="slider-track">
+          <div class="slider-slide">
+            <img src="https://images.unsplash.com/photo-1631217868264-e5b90bb7e133?w=600&h=450&fit=crop" alt="Hospital Recovery">
+            <div class="slide-overlay">
+              <h4>Expert Recovery Plans</h4>
+              <p>Doctor-approved daily recovery guides</p>
+            </div>
+          </div>
+          <div class="slider-slide">
+            <img src="https://images.unsplash.com/photo-1559757175-5700dde675bc?w=600&h=450&fit=crop" alt="Patient Care">
+            <div class="slide-overlay">
+              <h4>Medicine Reminders</h4>
+              <p>Never miss a dose with smart alerts</p>
+            </div>
+          </div>
+          <div class="slider-slide">
+            <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=600&h=450&fit=crop" alt="Recovery Exercises">
+            <div class="slide-overlay">
+              <h4>Guided Exercises</h4>
+              <p>Gentle routines for every recovery stage</p>
+            </div>
+          </div>
+        </div>
+        <button class="slider-nav prev-btn"><i class="fa-solid fa-chevron-left"></i></button>
+        <button class="slider-nav next-btn"><i class="fa-solid fa-chevron-right"></i></button>
+        <div class="slider-dots">
+          <button class="slider-dot active"></button>
+          <button class="slider-dot"></button>
+          <button class="slider-dot"></button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="features" id="features">
+    <div class="container">
+      <div class="text-center">
+        <span class="section-label animate-in">Why RecoverEase</span>
+        <h2 class="section-title animate-in delay-1">Everything You Need to Recover</h2>
+        <p class="section-subtitle animate-in delay-2" style="margin:0 auto">
+          A comprehensive platform designed with doctors and patients to make home recovery safe and simple.
+        </p>
+      </div>
+      <div class="features-grid">
+        <div class="feature-card animate-in delay-1">
+          <div class="feature-icon blue"><i class="fa-solid fa-clipboard-list"></i></div>
+          <h3>Daily Recovery Plans</h3>
+          <p>Personalized day-by-day plans for surgery, fever, or fracture recovery. Track every task and milestone.</p>
+          <img class="feature-img" src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=500&h=200&fit=crop" alt="Recovery Plans">
+        </div>
+        <div class="feature-card animate-in delay-2">
+          <div class="feature-icon rose"><i class="fa-solid fa-pills"></i></div>
+          <h3>Medicine Reminders</h3>
+          <p>Never miss a dose again. Set up reminders for all your medications with dosage tracking and history.</p>
+          <img class="feature-img" src="https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=500&h=200&fit=crop" alt="Medicine Reminders">
+        </div>
+        <div class="feature-card animate-in delay-3">
+          <div class="feature-icon green"><i class="fa-solid fa-dumbbell"></i></div>
+          <h3>Exercise Library</h3>
+          <p>Doctor-approved exercises with video guides for breathing, mobility, stretching, and strength recovery.</p>
+          <img class="feature-img" src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=500&h=200&fit=crop" alt="Exercise Library">
+        </div>
+        <div class="feature-card animate-in delay-1">
+          <div class="feature-icon amber"><i class="fa-solid fa-chart-line"></i></div>
+          <h3>Progress Dashboard</h3>
+          <p>Visual progress tracking with charts, completion rates, and activity feeds to keep you motivated.</p>
+          <img class="feature-img" src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=500&h=200&fit=crop" alt="Progress Dashboard">
+        </div>
+        <div class="feature-card animate-in delay-2">
+          <div class="feature-icon purple"><i class="fa-solid fa-user-doctor"></i></div>
+          <h3>Caregiver Instructions</h3>
+          <p>Share recovery plans with family and caregivers so everyone stays informed and coordinated.</p>
+          <img class="feature-img" src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=500&h=200&fit=crop" alt="Caregiver Support">
+        </div>
+        <div class="feature-card animate-in delay-3">
+          <div class="feature-icon cyan"><i class="fa-solid fa-bell"></i></div>
+          <h3>Emergency Alerts</h3>
+          <p>Quick access to emergency contacts, hospital locator, and critical symptom warnings when they matter most.</p>
+          <img class="feature-img" src="https://images.unsplash.com/photo-1603398938378-e54eab446dde?w=500&h=200&fit=crop" alt="Emergency Alerts">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How It Works -->
+  <section class="how-it-works">
+    <div class="container">
+      <div class="text-center">
+        <span class="section-label animate-in">Simple Process</span>
+        <h2 class="section-title animate-in delay-1">How RecoverEase Works</h2>
+        <p class="section-subtitle animate-in delay-2" style="margin:0 auto">
+          Get started in minutes and begin your guided recovery journey.
+        </p>
+      </div>
+      <div class="steps-grid">
+        <div class="step-card animate-in delay-1">
+          <div class="step-number">1</div>
+          <h3>Create Account</h3>
+          <p>Sign up in seconds with just your name and email. No complicated forms.</p>
+        </div>
+        <div class="step-card animate-in delay-2">
+          <div class="step-number">2</div>
+          <h3>Select Condition</h3>
+          <p>Choose your recovery type — surgery, fever, or fracture — for a personalized plan.</p>
+        </div>
+        <div class="step-card animate-in delay-3">
+          <div class="step-number">3</div>
+          <h3>Follow Daily Plan</h3>
+          <p>Complete daily tasks, take medicines on time, and do recommended exercises.</p>
+        </div>
+        <div class="step-card animate-in delay-4">
+          <div class="step-number">4</div>
+          <h3>Track Progress</h3>
+          <p>Monitor your recovery with visual dashboards and celebrate milestones.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="testimonials">
+    <div class="container">
+      <div class="text-center">
+        <span class="section-label animate-in">Patient Stories</span>
+        <h2 class="section-title animate-in delay-1">Loved by Patients & Caregivers</h2>
+        <p class="section-subtitle animate-in delay-2" style="margin:0 auto">
+          Real stories from people who recovered better with RecoverEase.
+        </p>
+      </div>
+      <div class="testimonial-grid">
+        <div class="testimonial-card animate-in delay-1">
+          <div class="stars">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+          </div>
+          <p class="quote">"After my knee surgery, RecoverEase was a lifesaver. The daily plans kept me on track and I recovered two weeks faster than expected."</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">SK</div>
+            <div>
+              <div class="name">Sarah K.</div>
+              <div class="role">Knee Surgery Recovery</div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card animate-in delay-2">
+          <div class="stars">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+          </div>
+          <p class="quote">"The medicine reminder feature is brilliant. I was taking 6 different medications and never missed a single dose thanks to the alerts."</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">MR</div>
+            <div>
+              <div class="name">Michael R.</div>
+              <div class="role">Cardiac Surgery Recovery</div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card animate-in delay-3">
+          <div class="stars">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+          </div>
+          <p class="quote">"As a caregiver for my elderly mother, this app gave me confidence. I knew exactly what to do each day and when to call the doctor."</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">LP</div>
+            <div>
+              <div class="name">Lisa P.</div>
+              <div class="role">Caregiver, Hip Fracture</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="cta-section">
+    <div class="container">
+      <h2 class="animate-in">Start Your Recovery Today</h2>
+      <p class="animate-in delay-1">Join thousands of patients who are recovering better at home with personalized guidance.</p>
+      <a href="register.html" class="btn btn-primary btn-lg animate-in delay-2">
+        <i class="fa-solid fa-rocket"></i> Get Started Free
+      </a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="nav-logo">
+            <div class="logo-icon"><i class="fa-solid fa-heart-pulse"></i></div>
+            RecoverEase
+          </a>
+          <p>Your trusted companion for post-hospital recovery. Guiding you back to health, one day at a time.</p>
+          <div class="footer-social">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+          </div>
+        </div>
+        <div>
+          <h4>Platform</h4>
+          <ul>
+            <li><a href="recovery.html">Recovery Plans</a></li>
+            <li><a href="medicine.html">Medicine Tracker</a></li>
+            <li><a href="exercise.html">Exercises</a></li>
+            <li><a href="dashboard.html">Dashboard</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Support</h4>
+          <ul>
+            <li><a href="#">Help Center</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Caregiver Guide</a></li>
+            <li><a href="#">FAQs</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Emergency</h4>
+          <ul>
+            <li><a href="#" style="color:#EF4444;font-weight:600"><i class="fa-solid fa-phone"></i> Call 911</a></li>
+            <li><a href="#">Poison Control</a></li>
+            <li><a href="#">Find Hospital</a></li>
+            <li><a href="#">Emergency Tips</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>2024 RecoverEase. All rights reserved.</span>
+        <span>Made with <i class="fa-solid fa-heart" style="color:#EF4444"></i> for patients</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

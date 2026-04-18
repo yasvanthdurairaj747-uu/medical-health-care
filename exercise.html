@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercises — RecoverEase</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar scrolled" id="navbar">
+    <div class="container">
+      <a href="index.html" class="nav-logo">
+        <div class="logo-icon"><i class="fa-solid fa-heart-pulse"></i></div>
+        RecoverEase
+      </a>
+      <div class="nav-links" id="navLinks">
+        <a href="index.html">Home</a>
+        <a href="recovery.html">Recovery</a>
+        <a href="medicine.html">Medicine</a>
+        <a href="exercise.html" class="active">Exercise</a>
+        <a href="dashboard.html">Dashboard</a>
+      </div>
+      <div class="nav-actions" id="navActions"></div>
+      <button class="nav-toggle" id="navToggle"><i class="fa-solid fa-bars"></i></button>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <div class="page-header">
+    <div class="container">
+      <span class="section-label"><i class="fa-solid fa-dumbbell"></i> Exercise Library</span>
+      <h1>Recovery Exercises</h1>
+      <p>Gentle, doctor-approved exercises for every stage of your recovery</p>
+    </div>
+  </div>
+
+  <!-- Page Content -->
+  <div class="page-content">
+    <div class="container">
+
+      <!-- Filters -->
+      <div class="exercise-filters animate-in">
+        <button class="condition-btn exercise-filter-btn active" data-filter="all">
+          <i class="fa-solid fa-border-all"></i> All Exercises
+        </button>
+        <button class="condition-btn exercise-filter-btn" data-filter="breathing">
+          <i class="fa-solid fa-wind"></i> Breathing
+        </button>
+        <button class="condition-btn exercise-filter-btn" data-filter="mobility">
+          <i class="fa-solid fa-person-walking"></i> Mobility
+        </button>
+        <button class="condition-btn exercise-filter-btn" data-filter="stretching">
+          <i class="fa-solid fa-child-reaching"></i> Stretching
+        </button>
+        <button class="condition-btn exercise-filter-btn" data-filter="strength">
+          <i class="fa-solid fa-dumbbell"></i> Strength
+        </button>
+        <button class="condition-btn exercise-filter-btn" data-filter="cardio">
+          <i class="fa-solid fa-heart"></i> Cardio
+        </button>
+      </div>
+
+      <!-- Info Banner -->
+      <div style="padding:20px 24px;background:#E0F2FE;border:1px solid #BAE6FD;border-radius:var(--radius-lg);margin-bottom:32px;display:flex;gap:14px;align-items:flex-start" class="animate-in delay-1">
+        <i class="fa-solid fa-circle-info" style="color:var(--primary);font-size:20px;margin-top:2px"></i>
+        <div>
+          <strong style="font-size:14px">Safety First</strong>
+          <p style="font-size:13px;color:var(--text-light);margin-top:4px;line-height:1.6">
+            Always consult your doctor before starting any exercise. Stop immediately if you feel sharp pain, dizziness, or unusual discomfort. Start slowly and gradually increase intensity.
+          </p>
+        </div>
+      </div>
+
+      <!-- Exercise Grid -->
+      <div class="exercise-grid animate-in delay-2" id="exerciseGrid">
+        <!-- Rendered by JS -->
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="nav-logo">
+            <div class="logo-icon"><i class="fa-solid fa-heart-pulse"></i></div>
+            RecoverEase
+          </a>
+          <p>Your trusted companion for post-hospital recovery. Guiding you back to health, one day at a time.</p>
+          <div class="footer-social">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+          </div>
+        </div>
+        <div>
+          <h4>Platform</h4>
+          <ul>
+            <li><a href="recovery.html">Recovery Plans</a></li>
+            <li><a href="medicine.html">Medicine Tracker</a></li>
+            <li><a href="exercise.html">Exercises</a></li>
+            <li><a href="dashboard.html">Dashboard</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Support</h4>
+          <ul>
+            <li><a href="#">Help Center</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Caregiver Guide</a></li>
+            <li><a href="#">FAQs</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Emergency</h4>
+          <ul>
+            <li><a href="#" style="color:#EF4444;font-weight:600"><i class="fa-solid fa-phone"></i> Call 911</a></li>
+            <li><a href="#">Poison Control</a></li>
+            <li><a href="#">Find Hospital</a></li>
+            <li><a href="#">Emergency Tips</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>2024 RecoverEase. All rights reserved.</span>
+        <span>Made with <i class="fa-solid fa-heart" style="color:#EF4444"></i> for patients</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
